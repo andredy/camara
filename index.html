@@ -11,7 +11,6 @@
 <script type="text/javascript">
 var destinationType;
 
-
     document.addEventListener("deviceready", onDeviceReady,false );
     
 function onDeviceReady(){
@@ -19,7 +18,7 @@ function onDeviceReady(){
 $("#btnCamara").tap(function pulsacion(){
     
 
-    navigator.camera.getPicture(onSuccess, onFail,{quality:50,
+    navigator.camera.getPicture( onSuccess, onFail,{quality:50,
     destinationType:Camera.destinationType.FILE_URI});
 
 function onSuccess(imageURI){
@@ -53,8 +52,8 @@ font-weight:bold;
 		<h1>Mi aplicación</h1>
 	</div>
 	<div data-role="content">
-	<input type="button" value="Acceder a camara" id="btnCamara"/>        
-        <img src=" " id="myImage"> 
+	<input type="button" value="Acceder a camara" id="btnCamara" />
+	<img src="" id="myImage" />
 
 
 </div>
